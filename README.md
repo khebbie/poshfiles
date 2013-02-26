@@ -4,7 +4,7 @@ Powershell Profile
 To install simply run the following in Powershell
 
 <pre>
-git clone git@github.com:scottmuc/poshfiles %USERPROFILE%\Documents\WindowsPowershell
+git clone git@github.com:khebbie/poshfiles %USERPROFILE%\Documents\WindowsPowershell
 </pre>
 
 Features
