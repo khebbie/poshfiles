@@ -25,7 +25,15 @@ function rm-rf($item) { Remove-Item $item -Recurse -Force }
 function touch($file) { (dir $file).LastWriteTime = get-date }
 function purgeCache() {ls -r -include web.config | % {touch $_}} 
 function openProject() {ii *.sln; ii .}
-function openUrl($url){Start-Process -filepath $url}
+function openUrl($url)
+{
+if(!$url.StartsWith("http://"))
+	{
+		$url = "http://" + $url
+		
+	}
+	 Start-Process -filepath $url
+}
 
 $UserBinDir = "$($env:UserProfile)\bin"
 
