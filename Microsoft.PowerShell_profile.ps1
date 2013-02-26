@@ -27,10 +27,9 @@ function purgeCache() {ls -r -include web.config | % {touch $_}}
 function openProject() {ii *.sln; ii .}
 function openUrl($url)
 {
-if(!$url.StartsWith("http://"))
+	if(!$url.StartsWith("http://"))
 	{
 		$url = "http://" + $url
-		
 	}
 	 Start-Process -filepath $url
 }
