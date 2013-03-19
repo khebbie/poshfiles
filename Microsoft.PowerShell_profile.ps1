@@ -25,6 +25,7 @@ function rm-rf($item) { Remove-Item $item -Recurse -Force }
 function touch($file) { (dir $file).LastWriteTime = get-date }
 function purgeCache() {ls -r -include web.config | % {touch $_}} 
 function openProject() {ii *.sln; ii .}
+function top(){while (1) { ps | sort -desc cpu | select -first 30; sleep -seconds 2; cls }}
 function openUrl($url)
 {
 	if(!$url.StartsWith("http://"))
