@@ -70,7 +70,7 @@ function prompt {
 }
 New-Alias which get-command
 . (Resolve-Path ~/Documents/WindowsPowershell/ssh-agent-utils.ps1)
-cmd /c """C:\Program Files `(x86`)\Microsoft Visual Studio 10.0\VC\vcvarsall.bat""" ""x86""
+cmd /c """C:\Program Files `(x86`)\Microsoft Visual Studio 11.0\VC\vcvarsall.bat""" ""x86""
 
 cd C:\src
 $env:Path += ";C:\Windows\SysWOW64"

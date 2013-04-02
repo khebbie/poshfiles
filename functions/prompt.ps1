@@ -28,4 +28,3 @@ function prompt {
    return '> '
 }
 
-Enable-GitColors
